@@ -13,8 +13,8 @@ const Hero = () => {
 
   const products = [
     { id: 1, name: 'AirPods (1st generation)', price: 14999, image: 'https://i.pinimg.com/736x/05/78/9b/05789b5a6b602c684decd1653da33d3d.jpg' },
-    { id: 2, name: 'AirPods Pro', price: 19999, image: 'https://i.pinimg.com/736x/f7/45/c5/f745c54e305de2652df460baa9425408.jpg' },
-    { id: 3, name: 'AirPods Max', price: 59999, image: 'https://photos5.appleinsider.com/gallery/62039-128589-AirPods-Max-3-xl.jpg' }
+    { id: 2, name: 'AirPods Pro', price: 19999, image: 'https://i.pinimg.com/736x/d2/6f/8c/d26f8c5ee5aeb67001d4803dc41178e7.jpg' },
+    { id: 3, name: 'AirPods Max', price: 59999, image: 'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/airpods-max-select-green-202011?wid=940&hei=1112&fmt=png-alpha' }
   ];
 
   const handleShowPopup = () => {

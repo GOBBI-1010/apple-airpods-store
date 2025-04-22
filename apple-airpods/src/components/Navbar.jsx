@@ -53,7 +53,7 @@ const NavigationBar = () => {
     if (query.includes('apple') || query.includes('airpods') || query.includes('airpods pro') || query.includes('airpods max')) {
       setSearchResults([
         { title: 'Apple AirPods', link: 'https://www.apple.com/airpods/', image: 'https://i.pinimg.com/736x/05/78/9b/05789b5a6b602c684decd1653da33d3d.jpg' },
-        { title: 'Apple AirPods Pro', link: 'https://www.apple.com/airpods-pro/', image: 'https://i.pinimg.com/736x/f7/45/c5/f745c54e305de2652df460baa9425408.jpg' },
+        { title: 'Apple AirPods Pro', link: 'https://www.apple.com/airpods-pro/', image: 'https://i.pinimg.com/736x/d2/6f/8c/d26f8c5ee5aeb67001d4803dc41178e7.jpg' },
         { title: 'Apple AirPods Max', link: 'https://www.apple.com/airpods-max/', image: 'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/airpods-max-select-green-202011?wid=940&hei=1112&fmt=png-alpha' }
       ]);
     } else {
