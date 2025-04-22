@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
@@ -12,8 +12,11 @@ import Products from './components/Products';
 import AirPodsPage from './pages/AirPodsPage';
 import AirPodsProPage from './pages/AirPodsProPage';
 import AirPodsMaxPage from './pages/AirPodsMaxPage';
+import Preloader from './components/Preloader';
 
 const App = () => {
+  const [loading, setLoading] = useState(true);
+
   useEffect(() => {
     // Check internet connection when component mounts
     const checkConnection = () => {
@@ -28,14 +31,21 @@ const App = () => {
     // Add event listeners for online/offline status
     window.addEventListener('offline', checkConnection);
 
-    // Cleanup event listeners
+    // Simulate loading time and hide preloader
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 2000); // Show preloader for 2 seconds
+
+    // Cleanup event listeners and timer
     return () => {
       window.removeEventListener('offline', checkConnection);
+      clearTimeout(timer);
     };
   }, []);
 
   return (
     <div className="app">
+      <Preloader loading={loading} />
       <Router>
         <div className="app">
           <NavigationBar />
