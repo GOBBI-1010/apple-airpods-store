@@ -31,10 +31,10 @@ const App = () => {
     // Add event listeners for online/offline status
     window.addEventListener('offline', checkConnection);
 
-    // Simulate loading time and hide preloader
+    // Hide preloader after 2 seconds
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 2000); // Show preloader for 2 seconds
+    }, 2000);
 
     // Cleanup event listeners and timer
     return () => {
